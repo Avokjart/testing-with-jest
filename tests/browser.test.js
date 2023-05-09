@@ -28,7 +28,7 @@ describe('Clicking "Titta på översta elementet"', () => {
       let push = await driver.findElement(By.id('push'));
       await push.click();
       let alert = await driver.switchTo().alert();
-      await alert.sendKeys("Bananer");
+      await alert.sendKeys("Apelsiner");
       await alert.accept();
 
       let peek = await driver.findElement(By.id('peek'));
